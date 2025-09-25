@@ -26,7 +26,7 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/cpu.jpg';
-import testimonialImage from '../images/testimonial.webp';
+// import testimonialImage from '../images/testimonial.webp';
 
 import {
   About,
@@ -37,7 +37,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  // TestimonialSection,
   TimelineItem,
   Project,
 } from './dataDef';
@@ -61,7 +61,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  // Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -75,15 +75,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a recent <strong className="text-stone-100">UCR gradaute</strong>, bachelor's in 
-         <strong className="text-stone-100"> Computer Science</strong>. I am a 2nd generation immigrant and I 
-         hope to empower my family into believing that they too can graduate university and get into fields 
-         that seem intimidating to be successful in.
+        Hi! I earned my Bachelor’s degree in <strong className="text-stone-100"> Computer Science</strong> from <strong className="text-stone-100"> UC Riverside</strong>, where 
+        I built a strong foundation in software development and computing. I’m now diving into <strong className="text-stone-100"> IT and Cybersecurity</strong> through an 
+        Associate’s degree program at my community college, while also pursuing CompTIA certifications to gain hands-on skills and stay current with the latest in the field.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me going to the <strong className="text-stone-100">gym</strong>,
-        spending time with <strong className="text-stone-100">family and friends</strong>, or going on adventures with {' '}
-        <strong className="text-stone-100">nature</strong>.
+        In my free time time, you can catch me going to the <strong className="text-stone-100">gym</strong>, spending time with <strong className="text-stone-100">family and friends</strong>, 
+        watching <strong className="text-stone-100">NBA & NFL</strong>, or <strong className="text-stone-100">coding</strong>.
       </p>
     </>
   ),
@@ -107,16 +105,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am the first person in my family to graudate from a university. Both my parents are Mexican, which makes me a 
-  Chicano. I developed my interest in computers at an early age, when I received my first laptop at 10 years old. I later built
-  my own PC at 16, with money I saved up from doing yardwork and chores. During this time, I was also in AP computer sicence principles,
-  which strengthened my liking of computers. And I eventually decided to pursue an education in computer science. I like to watch the NBA,
-  NFL, and occassionally MLB. I spend most of my free time going to the gym or learning about new technologies.`,
+  description: `I am the first person in my family to graduate from a university. Both of my parents are Mexican, which makes me Chicano. 
+  My interest in computers began at a young age when I received my first laptop at 10. By 16, I had built my own PC using money I saved from 
+  yard work and household chores. Around the same time, I took AP Computer Science Principles, which deepened my passion for technology and 
+  inspired me to pursue a degree in Computer Science. During my studies at UCR, I became particularly fascinated by cybersecurity, which led 
+  me to pursue a degree in IT Cybersecurity. Outside of academics, I enjoy following the NBA, NFL, and occasionally MLB, and I spend most of 
+  my free time at the gym or exploring new technologies.`,
   aboutItems: [
     {label: 'Location', text: 'Moreno Valley, CA', Icon: MapIcon},
-    {label: 'Age', text: '22', Icon: CalendarIcon},
     {label: 'Nationality', text: 'US Citizen', Icon: FlagIcon},
-    {label: 'Interests', text: 'Electronics, Powerbuilding, Sneakerhead', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Electronics, Powerbuilding, Sneakerhead, Cars', Icon: SparklesIcon},
     {label: 'Study', text: 'University of California, Riverside', Icon: AcademicCapIcon},
   ],
 };
@@ -287,26 +285,26 @@ export const experience: Project[] = [
 /**
  * Testimonial section
  */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
+// export const testimonial: TestimonialSection = {
+//   imageSrc: testimonialImage,
+//   testimonials: [
+//     {
+//       name: 'John Doe',
+//       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+//     },
+//     {
+//       name: 'Jane Doe',
+//       text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+//     },
+//     {
+//       name: 'Someone else',
+//       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+//     },
+//   ],
+// };
 
 /**
  * Contact section
@@ -314,7 +312,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'I’m just a click away! Here’s how to connect.',
   items: [
     {
       type: ContactType.Email,
