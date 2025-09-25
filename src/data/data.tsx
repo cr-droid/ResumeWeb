@@ -2,7 +2,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   //BuildingOffice2Icon,
-  CalendarIcon,
+  // CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
