@@ -2,14 +2,18 @@
   "name": "react-resume-template",
   "version": "2.0.0",
   "private": true,
+  "homepage": "https://github.com/cr-droid/ResumeWeb",
   "scripts": {
-    "build": "yarn compile && yarn next build",
-    "clean": "rm -rf build-tsc .next",
-    "compile": "yarn run -T tsc --build --verbose",
-    "dev": "yarn compile && yarn next dev",
+    "dev": "next dev",
+    "build": "next build",           
+    "predeploy": "next build",       
+    "deploy": "gh-pages -d out", 
+    "start": "next start",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
-    "start": "yarn next start",
-    "sitemap": "yarn next-sitemap"
+    "clean": "rm -rf .next out build-tsc",
+    "compile": "yarn run -T tsc --build --verbose",
+  "sitemap": "next-sitemap"
+
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
@@ -45,6 +49,7 @@
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.27",
     "postcss-preset-env": "^9.1.0",
     "prettier": "^3.0.0",
@@ -56,7 +61,7 @@
     "stylelint-order": "^6.0.3",
     "stylelint-prettier": "^4.0.2",
     "tailwindcss": "^3.3.3",
-    "typescript": "5.3.2"
+    "typescript": "^5.9.2"
   },
   "resolutions": {
     "autoprefixer": "10.4.5"

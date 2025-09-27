@@ -1,6 +1,6 @@
 import {FC, memo} from 'react';
 
-import {Project} from '../../../data/dataDef';
+import type {Project} from '../../../data/dataDef';
 
 const Project: FC<{item: Project}> = memo(({item}) => {
   const {title,content} = item;

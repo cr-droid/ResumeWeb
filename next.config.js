@@ -23,7 +23,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: false,
+  output: 'export',         // <-- add this
   images: {
+    unoptimized: true,      // <-- add this
     remotePatterns: [
       {
         protocol: 'https',
