@@ -45,7 +45,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
+  title: 'CR Resume',
   description: "Example site built with Tim Baker's react resume template",
 };
 
