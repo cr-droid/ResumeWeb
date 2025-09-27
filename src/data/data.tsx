@@ -86,16 +86,25 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
+    // {
+    //   // href: 'https://docs.google.com/document/d/1Ds2Shr14DvrPwcC9s1hJMaJ8_2qetMTHknc6gN6Gnvo/edit?usp=sharing',
+    //   href: '/CRuizResume.pdf',
+    //   text: 'Resume',
+    //   primary: true,
+    //   Icon: ArrowDownTrayIcon,
+    // },
     {
-      href: 'https://docs.google.com/document/d/1Ds2Shr14DvrPwcC9s1hJMaJ8_2qetMTHknc6gN6Gnvo/edit?usp=sharing',
+      href: '/CS_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
+      isPdf: true, // <-- Explicitly mark this as a PDF
     },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
       primary: false,
+      isPdf: false,
     },
   ],
 };
@@ -285,10 +294,10 @@ export const experience: Project[] = [
     title: 'SIEM Log Monitoring & Threat Detection',
     content: (
       <ul>
-        <li>• Deployed the Elastic Stack (Elasticsearch, Logstash, Kibana, Filebeat) on Ubuntu to build a custom SIEM solution.</li>
-        <li>• Ingested and normalized system logs and CSV-based event data into Elasticsearch for structured analysis and correlation.</li>
-        <li>• Configured Logstash pipelines and created Kibana dashboards to detect authentication failures, malware activity, and high-priority alerts.</li>
-        <li>• Strengthened incident visibility by developing queries and visualizations to identify security trends and suspicious activity.</li>
+        <li>• Deployed the Elastic Stack (Elasticsearch, Logstash, Kibana, Filebeat) on an Ubuntu Linux VM using VirtualBox to build a custom SIEM solution</li>
+        <li>• Ingested and normalized system logs and CSV-based event data into Elasticsearch for structured analysis and correlation</li>
+        <li>• Configured Logstash pipelines and created Kibana dashboards to detect authentication failures, malware activity, and high-priority alerts</li>
+        <li>• Strengthened incident visibility by developing queries and visualizations to identify security trends and suspicious activity</li>
       </ul>
     ),
   },
