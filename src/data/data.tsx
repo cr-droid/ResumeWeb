@@ -14,17 +14,17 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header3.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+// import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+// import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+// import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+// import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/cpu.jpg';
 // import testimonialImage from '../images/testimonial.webp';
 
@@ -34,7 +34,7 @@ import {
   ContactType,
   Hero,
   HomepageMeta,
-  PortfolioItem,
+  // PortfolioItem,
   SkillGroup,
   Social,
   // TestimonialSection,
@@ -57,7 +57,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  // Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -140,16 +140,16 @@ export const skills: SkillGroup[] = [
     name: 'Programming Languages:',
     skills: [
       {
-        name: 'C++',
+        name: 'Python',
+        level: 10,
+      },
+      {
+        name: 'C/C++',
         level: 10,
       },
       {
         name: 'Java',
         level: 10,
-      },
-      {
-        name: 'Python',
-        level: 9,
       },
       {
         name: 'LC-3',
@@ -160,124 +160,185 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'C#',
-        level: 8,
-      },
-      {
-        name: 'Node.js',
-        level: 5,
+        name: 'JavaScript',
+        level: 6,
       },
     ],
-  }
+  },
+  {
+    name: 'Operating systems:',
+    skills: [
+      {
+        name: 'Windows',
+        level: 10,
+      },
+      {
+        name: 'Linux',
+        level: 9,
+      },
+      {
+        name: 'MacOS',
+        level: 9,
+      },
+    ],
+  },
 ];
 
-/**
- * Portfolio section
- */
-export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
-];
+// /**
+//  * Portfolio section
+//  */
+// export const portfolioItems: PortfolioItem[] = [
+//   {
+//     title: 'Project title 1',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage1,
+//   },
+//   {
+//     title: 'Project title 2',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage2,
+//   },
+//   {
+//     title: 'Project title 3',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage3,
+//   },
+//   {
+//     title: 'Project title 4',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage4,
+//   },
+//   {
+//     title: 'Project title 5',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage5,
+//   },
+//   {
+//     title: 'Project title 6',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage6,
+//   },
+//   {
+//     title: 'Project title 7',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage7,
+//   },
+//   {
+//     title: 'Project title 8',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage8,
+//   },
+//   {
+//     title: 'Project title 9',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage9,
+//   },
+//   {
+//     title: 'Project title 10',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage10,
+//   },
+//   {
+//     title: 'Project title 11',
+//     description: 'Give a short description of your project here.',
+//     url: 'https://reactresume.com',
+//     image: porfolioImage11,
+//   },
+// ];
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
 export const education: TimelineItem[] = [
   {
-    date: 'May 2022',
+    date: 'Expected December 2027',
     location: 'Moreno Valley College',
-    title: 'AS Math & Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    title: 'AS, IT Cybersecurity',
+    content: <p></p>,
   },
   {
-    date: 'May 2024',
+    date: 'September 2024',
     location: 'University of California Riverside, Riverside CA',
-    title: 'B.S Computer Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    title: 'BS, Computer Science',
+    content: <p></p>,
+  },
+  {
+    date: 'July 2022',
+    location: 'Moreno Valley College',
+    title: 'AS, Math & Science',
+    content: <p></p>,
   },
 ];
 
 export const experience: Project[] = [
   {
-    title: 'Flight Booking System',
+    title: 'SIEM Log Monitoring & Threat Detection',
     content: (
-      <p>
-        Took care of user credential confidentiality by encrypting and decrypting user login information as necessary. Also updated and stored booked flight data 
-        for each user's itinerary. Also stored, filtered and updated flight data.
-      </p>
+      <ul>
+        <li>• Deployed the Elastic Stack (Elasticsearch, Logstash, Kibana, Filebeat) on Ubuntu to build a custom SIEM solution.</li>
+        <li>• Ingested and normalized system logs and CSV-based event data into Elasticsearch for structured analysis and correlation.</li>
+        <li>• Configured Logstash pipelines and created Kibana dashboards to detect authentication failures, malware activity, and high-priority alerts.</li>
+        <li>• Strengthened incident visibility by developing queries and visualizations to identify security trends and suspicious activity.</li>
+      </ul>
     ),
   },
   {
-    title: 'Junior bug fixer',
+    title: 'Crime Database System',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>• Preprocessed 22 million records of police crimes across five major cities (LA, Chicago, NYC, Austin, Philly) using Python scripts in PySpark, and stored the data in MySQL for efficient management</li>
+        <li>• Leveraged Node.js to retrieve and streamline the integration of large-scale datasets from MySQL, ensuring smooth data delivery and support for front-end development</li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Flight Booking System',
+    content: (
+      <ul>
+        <li>• Developed a secure system for companies to store user login credentials, manage itineraries, and handle flight booking data efficiently</li>
+        <li>• Enhanced user experience by enabling seamless itinerary management and providing convenient tools for storing, filtering, and updating flight booking data</li>
+        <li>• Worked within a team of 4, utilizing Git and Github for version control</li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Simon Says',
+    content: (
+      <ul>
+        <li>• Simon Says esque game using ATmega328P microcontroller (Arduino UNO) where light patterns are displayed on four LEDs in a cross patern</li>
+        <li>• Used bit manipulation to initialize and control components such as an EEPROM, Joystick, LCD screen, Buzzer, and LEDs</li>
+        <li>• User uses joystick to enter the pattern (choices are UP, LEFT, RIGHT, DOWN)</li>
+        <li>• LCD screen displays game state</li>
+        <li>• When powered off, EEPROM stores score data (highscore)</li>
+      </ul>
+    ),
+  },
+  {
+    title: 'UCR Chatroom',
+    content: (
+      <ul>
+        <li>• Developed a chat system using MongoDB to securely store user login credentials and efficiently manage chat data, using real-time communication and authentication processes within the application</li>
+        <li>• Integrated Google Login to provide users with a seamless and secure alternative login method, enhancing the overall user experience</li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Book and Movie Collectors Website',
+    content: (
+      <ul>
+        <li>• Developed a user-friendly website for collectors to catalog their book and movie collections, track owned items, identify missing pieces, and mark items as available for sale or trade, fostering user interaction and exchanges within the community</li>
+        <li>• ntegrated social networking features that allow users to share reviews, ratings, and recent reads/views on their profiles, enhancing the community experience similar to platforms like MyAnimeList</li>
+      </ul>
     ),
   },
 ];
