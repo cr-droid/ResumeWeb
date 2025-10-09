@@ -269,7 +269,7 @@ export const skills: SkillGroup[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'Expected December 2027',
+    date: 'Expected June 2027',
     location: 'Moreno Valley College',
     title: 'AS, IT Cybersecurity',
     content: <p></p>,
