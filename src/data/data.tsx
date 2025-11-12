@@ -185,7 +185,11 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'MacOS',
+        name: 'macOS',
+        level: 9,
+      },
+      {
+        name: 'iOS',
         level: 9,
       },
     ],
